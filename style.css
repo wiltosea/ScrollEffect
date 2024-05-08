@@ -1,0 +1,72 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {margin: 0; padding: 0 ; font-family: "Ubuntu Sans", sans-serif;}
+
+.banner, h1, button { transition: 0.6s;}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background: url("bg.jpg");
+  background-position: center;
+  background-size: 180%;
+
+  transition: 0.5s;
+}
+.banner h1 {font-size: 5rem; color: #f9f9f9;}
+
+.banner button {
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(0, 0, 0,20%);
+  backdrop-filter: blur(9px);
+  color: #f9f9f9;
+  font-size: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  color: #BAB9BB;
+}
+
+.content h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #BAB9BB;
+}
+
+.content .post-content {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+.created-by {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  background: #BB80C1;
+  width: 100%;
+  font-weight: bold;
+  height: 50px;
+  a{text-decoration: none;}
+}
